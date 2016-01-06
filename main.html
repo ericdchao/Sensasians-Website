@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<head>
+	  <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+ 
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+<title>Sensasians A cappella</title>
+<style type="text/css">
+body{
+	margin-top:60px;
+	/*width: 760px;  how wide to make your web page */
+	background-color: #FFF;  /*what color to make the background */
+	margin: 0 auto;
+	padding: 0;
+	font:12px/16px "Gill Sans", sans-serif; /* default font */
+}
+h1{
+	color: #e5d0fb;
+	font: 30px/34px "Gill Sans";
+	text-align: center; 
+}
+h2{
+	color: #FFF;
+	text-align: center; 
+	font: 30px/34px "Gill Sans";
+}
+a
+{
+	text-decoration: none;
+}
+a:hover {
+    color: #e5d0fb;
+}
+div#menu {
+	width:100%;
+    height:50px;
+    display:block;
+    position:absolute;
+    top:0;
+    left:0;
+	font: 12px/16px "Gill Sans";
+}
+.logo{
+	background-color:  #e5d0fb;
+    float:left;
+    }
+.nav{
+	background-color:  #e5d0fb;
+    float:right;
+    margin-right:10px;}
+.nav ul li{
+	background-color:  #e5d0fb;
+    list-style:none;
+    float:left;
+	display:inline;
+    padding: 10px 40px;
+	font: 16px/20px  '"Gill Sans"';
+    }
+div#page1{
+	background-color:  #e5d0fb;
+}
+
+div#pageA{
+	background-color:  #e5d0fb;
+	height: 400px; 
+}
+div#page2{
+	background-color: #FFF;
+	height: 700px; 
+}
+
+div#page3{
+	background-image: url("http://1-background.com/images/silk/grey-silk-website-background.jpg");
+	background-repeat: repeat;
+	height: 300px; 
+}
+
+
+.fixed-nav-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+  width: 100%;
+  height: 70px;
+  background-color:  #e5d0fb;
+}
+
+ul.img-list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+ul.img-list li {
+  display: inline-block;
+  height: 150px;
+  margin: 0 1em 1em 0;
+  position: relative;
+  width: 150px;
+}
+ul.img-list img {
+    border-radius: 10px;
+}
+span.text-content {
+  border-radius: 10px;
+  background: rgba(0,0,0,0.5);
+  color: #e5d0fb;
+  font: 16px/20px "Gill Sans";
+  cursor: pointer;
+  display: table;
+  height: 200px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 150px;
+  opacity: 0;
+  -webkit-transition: opacity 500ms;
+  -moz-transition: opacity 500ms;
+  -o-transition: opacity 500ms;
+  transition: opacity 500ms;
+}
+
+span.text-content span {
+  display: table-cell;
+  text-align: center;
+  vertical-align: middle;
+}
+
+ul.img-list li:hover span.text-content {
+  opacity: 1;
+}
+
+.container {
+    margin: 0 auto;
+    max-width: 100%;
+}
+
+.container article {float: left;}
+
+/*
+ * Caption component
+ */
+.caption {
+	width: 380px;
+	height: 280px;
+	margin: 30px 0px 30px 30px;
+	border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+
+    /* Only the -webkit- prefix is required these days */
+    -webkit-transform: translateZ(0);
+            transform: translateZ(0);
+}
+
+.caption::before {
+    content: ' ';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+	width: 380px;
+	height: 280px;
+	border-radius: 10px;
+	margin: 30px 0px 30px 30px;
+    background: transparent;
+    transition: background .35s ease-out;
+}
+
+.caption:hover::before {
+    background: rgba(0, 0, 0, .5);
+}
+
+.caption__media {
+    display: block;
+    /*min-width: 100%;
+    max-width: 100%;*/
+	margin: 30px 0px 30px 30px;
+	width: 380px;
+	height: 280px;
+	border-radius: 10px;
+}
+
+.caption__overlay {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    padding: 10px;
+	width: 320px;
+	height: 220px;
+	margin: 30px 0px 30px 30px;
+	border-radius: 10px;
+    color: white;
+
+    -webkit-transform: translateY(100%);
+            transform: translateY(100%);
+
+    transition: -webkit-transform .35s ease-out;
+    transition:         transform .35s ease-out;
+}
+
+.caption:hover .caption__overlay {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+}
+
+.caption__overlay__title {
+    -webkit-transform: translateY( -webkit-calc(-100% - 50px) );
+            transform: translateY( calc(-100% - 50px) );
+
+    transition: -webkit-transform .35s ease-out;
+    transition:         transform .35s ease-out;
+}
+
+.caption:hover .caption__overlay__title {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+}
+
+#overlay {
+    color:  #FFF;
+    position: absolute;
+	text-align: center;
+	margin: 0px 460px;
+	font: 30px/38px "Gill Sans";
+}
+
+#overlay2 {
+    color:  #A9A9A9;
+    position: absolute;
+	text-align: center;
+	margin: 35px 550px 50px;
+	font-size: 25px; font-weight: 300;
+}
+.video {
+    position: relative;
+    width: 100%;
+    height: 0;
+    padding-bottom: 56.25%;
+}
+.videoWrapper {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+</style>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+</head>
+<body>
+
+
+<nav class="fixed-nav-bar">
+	 <img class="logo" alt="image not found" src="http://sensasians.wustl.edu/wp-content/uploads/2015/07/profpic.png"/>
+	  <div class="nav">
+	 <ul>
+         <li><a href="#home">HOME</a></li>
+		 <li><a href="#about">ABOUT</a></li>
+         <li><a href="#portfolio">OUR MEMBERS</a></li>
+		 <li><a href="http://ec2-52-25-47-41.us-west-2.compute.amazonaws.com:3000/view1">SETLIST</a></li>
+         <li><a href="#contact">CONTACT</a></li>
+     </ul>
+	  </div>
+</nav>
+
+<div id="page1">
+  <a id="home" class="smooth"></a>
+</div>
+
+<div class="video">	
+	
+		<!-- width="1300" height="1000"  -->
+   <iframe  src="https://www.youtube.com/embed/SWwejdhQduY?autoplay=1&amp;loop=1&amp;playlist=SWwejdhQduY" frameborder="0" allowfullscreen class="videoWrapper"></iframe>
+   </div>
+</div>
+
+
+<!--<div style="margin:0px;padding:0px;overflow:hidden">
+	<iframe src="https://www.youtube.com/embed/SWwejdhQduY?autoplay=1&amp;loop=1&amp;playlist=SWwejdhQduY" frameborder="0" style="overflow:hidden;height:100%;width:100%" height="100%" width="150%"></iframe>
+</div>-->
+
+<div id="pageA">
+  <a id="about" class="smooth"></a>
+  <div id="overlay"> Hey, we're the Sensasians. </div>
+	<div id="overlay2"> get to know us </div>
+	<br>
+	<br>
+   <div class="container">
+
+    <article class="caption">
+        <img  alt="image not found"  class="caption__media" src="https://scontent.ford1-1.fna.fbcdn.net/hphotos-xfa1/v/t1.0-9/10981817_1127680660590735_6137993368482696523_n.jpg?oh=5ab7e2216328fbaff0f9c33225ca09f4&amp;oe=56E62B53" />
+        <div class="caption__overlay">
+            <h1 class="caption__overlay__title">Who We Are</h1>
+            <p class="caption__overlay__content">
+                Sensasians is Wash U's premier Asian interest A Cappella group. Founded in 2009, we sing in English and various Asian languages. Known as the singing pandas on campus, we specialize in bilingual mashups and more!
+            </p>
+        </div>
+    </article>
+	
+	<article class="caption">
+        <img alt="image not found"  class="caption__media" src="https://scontent.ford1-1.fna.fbcdn.net/hphotos-xlp1/v/t1.0-9/12289593_10206739092869965_3013595214910036433_n.jpg?oh=644fdebe4493df660b8f83bc111e287e&amp;oe=56AFB7A5" />
+        <div class="caption__overlay">
+            <h1 class="caption__overlay__title">Our Founders</h1>
+            <p class="caption__overlay__content">
+                 The Sensasians were founded in 2009 by alumni Lisa Ma and Phoebe Tran. Being avid music lovers, they realized that despite Washington University's bolstering A Cappella community, there wasn't a group that specialized in East-Asian music. With a goal to blend East-Asian music with pop, rock, and everything else, they gathered their talented karaoke friends and founded the Wash U Sensasians. Hailing the panda as our mascot, our goal is to mix up music from different cultures, make good music, and have a blast doing it.
+            </p>
+        </div>
+    </article>
+	
+	<article class="caption">
+        <img alt="image not found"  class="caption__media" src="https://scontent.ford1-1.fna.fbcdn.net/hphotos-xpf1/v/t1.0-9/12278701_10206739092909966_3407011290062486883_n.jpg?oh=9ce667c8e637c67750a96992f344056d&amp;oe=56E636F3" />
+        <div class="caption__overlay">
+            <h1 class="caption__overlay__title">What We Do</h1>
+            <p class="caption__overlay__content">
+                 Despite being the youngest of the 12 A Cappella groups on campus, The Sensasians are always kept on their feet performing for a huge variety of events and locations. During the regular school year, we perform for various University-wide functions, and make appearances at almost every Asian cultural group event on campus. We travel to a different location every year for an annual joint concert with other members of Quad-A (Asian American A Cappella Association). We also compete in ICCA's each year in addition to our semester-ly concerts. 
+            </p>
+        </div>
+    </article>
+
+</div>
+</div>
+ 
+<div id="page2">
+  <a id="portfolio" class="smooth"></a>
+  <h1> OUR MEMBERS. </h1> 
+  <ul class="img-list">
+	<li>
+			<a href="members.html#eric">
+			<img src="https://scontent.ford1-1.fna.fbcdn.net/hphotos-xap1/v/t1.0-9/10991079_1127680657257402_6179667397378052726_n.jpg?oh=009e769c1a32b4c0fe8305149aee6262&amp;oe=56AEF02A" width = 150 height = "200" alt="Image not found">
+			<span class="text-content"><span>ERIC CHAO</span></span>
+			</a>
+	</li>
+	<li>
+			<a href="members.html#megan">
+			<img src="https://scontent.ford1-1.fna.fbcdn.net/hphotos-xaf1/v/t1.0-9/10985486_1127680663924068_6614713710736954671_n.jpg?oh=9b285dd0c17f0e04e39535b2787399f5&amp;oe=56F0712D" width = 150 height = "200" alt="Image not found">
+			<span class="text-content"><span>MEGAN BACANI</span></span>
+			</a>
+	</li>
+	<li>
+			<a href="members.html#roger">
+			<img src="https://scontent.ford1-1.fna.fbcdn.net/hphotos-xpf1/v/t1.0-9/10978644_1127680717257396_5546479660899687135_n.jpg?oh=7f21513a263db4908c75c5efe830a369&amp;oe=56F202DE" width = 150 height = "200" alt="Image not found">
+			<span class="text-content"><span>ROGER HAN</span></span>
+			</a>
+	</li>
+	<li>
+			<a href="members.html#shannon">
+			<img src="https://scontent.ford1-1.fna.fbcdn.net/hphotos-xfa1/v/t1.0-9/10959871_1127680833924051_5979972218294842565_n.jpg?oh=126f296ae3b6d3f266039611d86c7c96&amp;oe=56B24E9D" width = 150 height = "200" alt="Image not found">
+			<span class="text-content"><span>SHANNON WANG</span></span>
+			</a>
+	</li>
+	<li>
+			<a href="members.html#tony">
+			<img src="https://scontent.ford1-1.fna.fbcdn.net/hphotos-xpt1/v/t1.0-9/10985549_1127681043924030_3512787003632741492_n.jpg?oh=8a03a5d034c3a863fc28ccbe96606d67&amp;oe=56E353AF" width = 150 height = "200" alt="Image not found">
+			<span class="text-content"><span>TONY WANG</span></span>
+			</a>
+	</li>
+	<li>
+			<a href="members.html#justin">
+			<img src="https://scontent.ford1-1.fna.fbcdn.net/hphotos-xaf1/v/t1.0-9/1555279_1127680837257384_7335693949148708281_n.jpg?oh=216dfe89c9598d6f2c3756823faf3e8c&amp;oe=56E9FFB6" width = 150 height = "200" alt="Image not found">
+			<span class="text-content"><span>JUSTIN AU</span></span>
+			</a>
+	</li>
+  </ul>
+  <br>
+  <ul class="img-list">
+	<li>
+			<a href="members.html#cassie">
+			<img src="https://scontent.ford1-1.fna.fbcdn.net/hphotos-xtp1/v/t1.0-9/10417611_1127680860590715_1117828336854151956_n.jpg?oh=df52a77e7ffc86439e7ec85380d37a78&amp;oe=56F7CDD7" width = 150 height = "200" alt="Image not found">
+			<span class="text-content"><span>CASSIE HWANG</span></span>
+			</a>
+	</li>
+	<li>
+			<a href="members.html#yiran">
+			<img src="https://scontent.ford1-1.fna.fbcdn.net/hphotos-xfl1/v/t1.0-9/10922427_1127680840590717_8029280602817484205_n.jpg?oh=51f487fd16c6d2d3daac641aad221bbe&amp;oe=56DD3245" width = 150 height = "200" alt="Image not found">
+			<span class="text-content"><span>YIRAN ZHANG</span></span>
+			</a>
+	</li>		
+	<li>
+			<a href="members.html#erfei">
+			<img src="https://scontent.ford1-1.fna.fbcdn.net/hphotos-xfp1/v/t1.0-9/10959671_1127680923924042_6669950862596853499_n.jpg?oh=b324e75029778211c7147d9e32d8478e&amp;oe=56DFC463" width = 150 height = "200" alt="Image not found">
+			<span class="text-content"><span>ERFEI ZHAO</span></span>
+			</a>
+	</li>
+	<li>
+			<a href="members.html#ian">
+			<img src="https://scontent.ford1-1.fna.fbcdn.net/hphotos-xlf1/v/t1.0-9/10984287_1127680927257375_4922887796482309341_n.jpg?oh=7d0a21adfbcbec20fcd9b3c072bce21f&amp;oe=56AE46C6" width = 150 height = "200" alt="Image not found">
+			<span class="text-content"><span>IAN GECKLER</span></span>
+			</a>
+	</li>
+	<li>
+			<a href="members.html#jenny">
+			<img src="https://scontent.ford1-1.fna.fbcdn.net/hphotos-xaf1/v/t1.0-9/10959590_1127680930590708_3478599524315379344_n.jpg?oh=bedd311992854d610ef6c8e296471b85&amp;oe=56B2A47F" width = 150 height = "200" alt="Image not found">
+			<span class="text-content"><span>JENNY WANG</span></span>
+			</a>
+	</li>
+	<li>
+			<a href="members.html#alex">
+			<img src="https://scontent.ford1-1.fna.fbcdn.net/hphotos-xpt1/v/t1.0-9/10994157_1127680933924041_2646020179407543781_n.jpg?oh=3f1dd4beb5da0f2ade4b2b38f1f7328d&amp;oe=56EA5175" width = 150 height = "200" alt="Image not found">
+			<span class="text-content"><span>ALEX JIA</span></span>
+			</a>
+	</li>
+  </ul>
+  <br>
+  <ul class="img-list">
+	<li>
+			<a href="members.html#kenny">
+			<img src="https://scontent.ford1-1.fna.fbcdn.net/hphotos-xfa1/v/t1.0-9/10983394_1127680990590702_8313583208120565338_n.jpg?oh=7dd54c76ef85a51102558e9121d6a9b2&amp;oe=56AD6D4E" width = 150 height = "200" alt="Image not found">
+			<span class="text-content"><span>KENNY HONG</span></span>
+			</a>
+	</li>
+	<li>
+			<a href="members.html#lily">
+			<img src="https://scontent.ford1-1.fna.fbcdn.net/hphotos-prn2/v/t1.0-9/10455758_1127681047257363_7130292688012229911_n.jpg?oh=a83b9cea850305102eab369830c95afa&amp;oe=56EF85D3" width = 150 height = "200" alt="Image not found">
+			<span class="text-content"><span>LILY CAO</span></span>
+			</a>
+	</li>
+	<li>
+			<a href="members.html#miles">
+			<img src="https://scontent.ford1-1.fna.fbcdn.net/hphotos-xpa1/v/t1.0-9/10985566_1127681050590696_177815994006325282_n.jpg?oh=3f6fa8d8aed9b0b0bc85b08f26d1f17f&amp;oe=56EA7106" width = 150 height = "200" alt="Image not found">
+			<span class="text-content"><span>MILES WOODHULL</span></span>
+			</a>
+	</li>
+	<li>
+			<a href="members.html#yash">
+			<img src="https://scontent.ford1-1.fna.fbcdn.net/hphotos-xfa1/v/t1.0-9/10959816_1127681060590695_742400793220952637_n.jpg?oh=9a522241652d7839ea05202ab70d010f&amp;oe=56F78E37" width = 150 height = "200" alt="Image not found">
+			<span class="text-content"><span>YASH BHATIA</span></span>
+			</a>
+	</li>
+	<li>
+			<a href="members.html#zhi">
+			<img src="https://scontent.ford1-1.fna.fbcdn.net/hphotos-xap1/v/t1.0-9/10445520_1127681117257356_5281808226274901557_n.jpg?oh=a1f9668c985fecf9ac11c6c1f6f9fce3&amp;oe=56F8C0DF" width = 150 height = "200" alt="Image not found">
+			<span class="text-content"><span>ZHIHONG GUO</span></span>
+			</a>
+	</li>
+
+  </ul>
+</div>
+ 
+<div id="page3">
+  <a id="contact" class="smooth"></a>
+   <h2> CONTACT US. </h2>
+</div>
+ 
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+<script src="https://github.com/kswedberg/jquery-smooth-scroll/blob/master/jquery.smooth-scroll.min.js"></script>
+<script>
+$('.smooth').on('click', function() {
+    $.smoothScroll({
+        scrollElement: $('body'),
+        scrollTarget: '#' + this.id
+    });
+    
+    return false;
+});
+</script>
+</body>
+</html>

@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<head>
+
+ <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+<title>My Web Page</title>
+<style type="text/css">
+body{
+	margin-top:60px;
+	/*width: 760px;  how wide to make your web page */
+	background-color: #e5d0fb;  /*what color to make the background */
+	margin: 0 auto;
+	padding: 0;
+	font:12px/16px "Gill Sans", sans-serif; /* default font */
+}
+h1{
+	color: #e5d0fb;
+	padding: 50px 20px 50px 20px;
+	font: 40px/48px "Gill Sans";
+	 text-align: right;
+}
+h2{
+	color: #e5d0fb; background: #FFF;
+	 margin: 50px 5px 0px; float: left; padding: 10px; margin: 50px 5px 0px;
+	font: 40px/48px "Gill Sans";
+}
+h3{
+	color: #FFF;
+	padding: 20px 20px 0px 20px;
+	font: 40px/48px "Gill Sans";
+}
+
+h4{
+	color: #FFF; background: #e5d0fb;
+	 margin: 75px 10px 0px; float: left; padding: 10px; margin: 75px 10px 0px;
+	font: 40px/48px "Gill Sans";
+}
+h5{
+	color: #e5d0fb;
+	padding: 20px 20px 0px 20px;
+	font: 40px/48px "Gill Sans";
+}
+
+.oddtitle{
+	color: #FFF;
+	margin: 0px 5px 10px; float: left; padding: 10px; margin: 0px 5px 10px;
+	font: 30px/38px "Gill Sans";
+}
+
+.eventitle{
+	color: #e5d0fb;
+	margin: 0px 5px 10px; float: left; padding: 10px; margin: 0px 5px 10px;
+	font: 30px/38px "Gill Sans";
+	text-align: right;
+}
+a
+{
+	text-decoration: none;
+}
+a:hover {
+    color: #e5d0fb;
+}
+div#menu {
+	width:100%;
+    height:50px;
+    display:block;
+    position:absolute;
+    top:0;
+    left:0;
+	font: 12px/16px "Gill Sans";
+}
+.logo{
+    float:left;
+    }
+.nav{
+    float:right;
+    margin-right:10px;}
+.nav ul li{
+    list-style:none;
+    float:left;
+	display:inline;
+    padding: 10px 40px;
+	font: 16px/20px "Gill Sans";
+    }
+.oddPage{
+	background-color:  #e5d0fb;
+	height: 700px;
+}
+
+.evenPage{
+	background-color: #FFF;
+	height: 700px;
+}
+
+
+.fixed-nav-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+  width: 100%;
+  height: 70px;
+  background-color: #FFF;
+}
+
+.grid-container {
+     width : 100%;
+    max-width : 1200px;
+}
+
+[class*='col-'] {
+        float: left;
+        min-height: 1px;
+    }
+	
+.col-1{ width: 35%; }
+.col-2{ width: 65%; }
+
+.grid-img{
+	height:500px;
+	width: 375px;
+    padding: 50px 20px 50px 20px;
+}
+.subheader { font-size: 26px; font-weight: 300; color: #A9A9A9;  margin: 10px 0px 10px; float: left; padding: 10px;  }
+.subheader2 { font-size: 26px; font-weight: 300; text-align: right; color: #A9A9A9;  margin: 10px 0px 10px; float: left; padding: 10px;  }
+
+#overlay {
+    color:  #e5d0fb;
+    position: absolute;
+	text-align: center;
+	margin: 170px 300px 10px;
+	font: 100px/180px "Gill Sans";
+}
+
+#overlay2 {
+    color:  #A9A9A9;
+    position: absolute;
+	text-align: center;
+	margin: 315px 390px 10px;
+	font-size: 65px; font-weight: 300;
+}
+
+</style>
+</head>
+<body>
+
+
+<nav class="fixed-nav-bar">
+	 <img class="logo" alt="Image not found" src="http://sensasians.wustl.edu/wp-content/uploads/2015/07/profpic.png"/>
+	  <div class="nav">
+	 <ul>
+         <li><a href="main.html#home">HOME</a></li>
+		 <li><a href="main.html#about">ABOUT</a></li>
+         <li><a href="main.html#portfolio">OUR MEMBERS</a></li>
+         <li><a href="main.html#contact">CONTACT</a></li>
+     </ul>
+	  </div>
+</nav>
+<div class="evenPage">
+	<div id="overlay"> OUR MEMBERS </div>
+	<div id="overlay2">the singing pandas </div>
+</div>
+<div class="oddPage">
+  <a id="eric" class="smooth"></a>
+  <br>
+  <br>
+  <br>
+  <div class="grid-container">
+	<div class = "col-1">
+			<img class = "grid-img" alt="Image not found" src="https://scontent.ford1-1.fna.fbcdn.net/hphotos-xap1/v/t1.0-9/10991079_1127680657257402_6179667397378052726_n.jpg?oh=009e769c1a32b4c0fe8305149aee6262&amp;oe=56AEF02A"/>
+	</div>
+	<div class = "col-2">
+			<h2>ERIC</h2><h3>CHAO</h3>
+			<div class = row>
+				 <div class="col-md-12">
+				<p class = "oddtitle"> POSITION:</p><p class ="subheader"> Music Director 2015 </p>
+				<p class = "oddtitle"> VOICE PART:</p><p class ="subheader"> Tenor </p>
+				 </div>
+			</div>
+			<p class = "oddtitle"> HOMETOWN: </p><p class ="subheader"> East Brunwick, NJ </p>
+	</div>
+  </div>
+</div>
+ 
+<div class="evenPage">
+    <a id="megan" class="smooth"></a>
+	<div class="grid-container">
+		<div class="col-2">
+			<h4>MEGAN</h4><h5>BACANI</h5>
+			<div class = row>
+				 <div class="col-md-12">
+				<p class = "eventitle"> POSITION:</p><p class ="subheader2"> Webmaster 2015 </p>
+				<p class = "eventitle"> VOICE PART:</p><p class ="subheader2"> Alto </p>
+				 </div>
+			</div>
+			<p class = "eventitle"> HOMETOWN: </p><p class ="subheader2"> Naperville, IL </p>
+		</div>
+		<div class="col-1">
+			<img class = "grid-img" alt="Image not found" src="https://scontent.ford1-1.fna.fbcdn.net/hphotos-xaf1/v/t1.0-9/10985486_1127680663924068_6614713710736954671_n.jpg?oh=9b285dd0c17f0e04e39535b2787399f5&amp;oe=56F0712D"/>
+		</div> 
+	</div>
+</div>
+ 
+<div class="oddPage">
+    <a id="roger" class="smooth"></a>
+	<div class="grid-container">
+		<div class="col-1">
+			<img class = "grid-img"  alt="Image not found" src="https://scontent.ford1-1.fna.fbcdn.net/hphotos-xpf1/v/t1.0-9/10978644_1127680717257396_5546479660899687135_n.jpg?oh=7f21513a263db4908c75c5efe830a369&amp;oe=56F202DE"/>
+		</div>
+		<div class="col-2">
+			<h2>ROGER</h2><h3>HAN</h3>
+			<div class = row>
+				<div class="col-md-12">
+				<p class = "oddtitle"> POSITION:</p><p class ="subheader"> Super Senior </p>
+				<p class = "oddtitle"> VOICE PART:</p><p class ="subheader"> Tenor </p>
+				</div>
+			</div>
+			<p class = "oddtitle"> HOMETOWN: </p><p class ="subheader"> Shanghai, China </p>
+		</div> 
+	</div>
+</div>
+
+<div class="evenPage">
+    <a id="shannon" class="smooth"></a>
+	<div class="grid-container">
+		<div class="col-2">
+			<h4>SHANNON</h4><h5>WANG</h5>
+			<div class = row>
+				 <div class="col-md-12">
+			<p class = "eventitle"> POSITION:</p><p class ="subheader2"> S. Senior </p>
+			<p class = "eventitle"> VOICE PART:</p><p class ="subheader2"> Alto </p>
+				 </div>
+			</div>
+			<p class = "eventitle"> HOMETOWN: </p><p class ="subheader2"> San Diego, CA </p>
+		</div>
+		<div class="col-1">
+			<img class = "grid-img" alt="Image not found" src="https://scontent.ford1-1.fna.fbcdn.net/hphotos-xfa1/v/t1.0-9/10959871_1127680833924051_5979972218294842565_n.jpg?oh=126f296ae3b6d3f266039611d86c7c96&amp;oe=56B24E9D"/>
+		</div> 
+	</div>
+</div>
+
+<div class="oddPage">
+    <a id="tony" class="smooth"></a>
+	<div class="grid-container">
+		<div class="col-1">
+			<img class = "grid-img" alt="Image not found" src="https://scontent.ford1-1.fna.fbcdn.net/hphotos-xpt1/v/t1.0-9/10985549_1127681043924030_3512787003632741492_n.jpg?oh=8a03a5d034c3a863fc28ccbe96606d67&amp;oe=56E353AF"/>
+		</div>
+		<div class="col-2">
+			<h2>TONY</h2><h3>WANG</h3>
+			<div class = row>
+				 <div class="col-md-12">
+			<p class = "oddtitle"> POSITION:</p><p class ="subheader"> Senior </p>
+			<p class = "oddtitle"> VOICE PART:</p><p class ="subheader"> Vocal Percussion </p>
+				 </div>
+			</div>
+			<p class = "oddtitle"> HOMETOWN: </p><p class ="subheader"> Boston, MA </p>
+		</div> 
+	</div>
+</div>
+
+<div class="evenPage">
+    <a id="justin" class="smooth"></a>
+	<div class="grid-container">
+		<div class="col-2">
+			<h4>JUSTIN</h4><h5>AU</h5>
+			<div class = row>
+				 <div class="col-md-12">
+			<p class = "eventitle"> POSITION:</p><p class ="subheader2"> Senior </p>
+			<p class = "eventitle"> VOICE PART:</p><p class ="subheader2"> Tenor </p>
+				 </div>
+			</div>
+			<p class = "eventitle"> HOMETOWN: </p><p class ="subheader2"> HongKong, China </p>
+		</div>
+		<div class="col-1">
+			<img class = "grid-img" alt="Image not found" src="https://scontent.ford1-1.fna.fbcdn.net/hphotos-xaf1/v/t1.0-9/1555279_1127680837257384_7335693949148708281_n.jpg?oh=216dfe89c9598d6f2c3756823faf3e8c&amp;oe=56E9FFB6"/>
+		</div> 
+	</div>
+</div>
+
+<div class="oddPage">
+    <a id="cassie" class="smooth"></a>
+	<div class="grid-container">
+		<div class="col-1">
+			<img class = "grid-img" alt="Image not found" src="https://scontent.ford1-1.fna.fbcdn.net/hphotos-xtp1/v/t1.0-9/10417611_1127680860590715_1117828336854151956_n.jpg?oh=df52a77e7ffc86439e7ec85380d37a78&amp;oe=56F7CDD7"/>
+		</div>
+		<div class="col-2">
+			<h2>CASSIE</h2><h3>HWANG</h3>
+			<div class = row>
+				 <div class="col-md-12">
+			<p class = "oddtitle"> POSITION:</p><p class ="subheader"> Treasurer </p>
+			<p class = "oddtitle"> VOICE PART:</p><p class ="subheader"> Alto </p>
+				 </div>
+			</div>
+			<p class = "oddtitle"> HOMETOWN: </p><p class ="subheader"> San Diego, CA </p>
+		</div> 
+	</div>
+</div>
+
+<div class="evenPage">
+    <a id="yiran" class="smooth"></a>
+	<div class="grid-container">
+		<div class="col-2">
+			<h4>YIRAN</h4><h5>ZHANG</h5>
+			<div class = row>
+				 <div class="col-md-12">
+			<p class = "eventitle"> POSITION:</p><p class ="subheader2"> Artistic Assistant </p>
+			<p class = "eventitle"> VOICE PART:</p><p class ="subheader2"> Soprano </p>
+				 </div>
+			</div>
+			<p class = "eventitle"> HOMETOWN: </p><p class ="subheader2"> Beijing, China </p>
+		</div>
+		<div class="col-1">
+			<img class = "grid-img"  alt="Image not found" src="https://scontent.ford1-1.fna.fbcdn.net/hphotos-xfl1/v/t1.0-9/10922427_1127680840590717_8029280602817484205_n.jpg?oh=51f487fd16c6d2d3daac641aad221bbe&amp;oe=56DD3245"/>
+		</div> 
+	</div>
+</div>
+
+<div class="oddPage">
+    <a id="erfei" class="smooth"></a>
+	<div class="grid-container">
+		<div class="col-1">
+			<img class = "grid-img" alt="Image not found" src="https://scontent.ford1-1.fna.fbcdn.net/hphotos-xfp1/v/t1.0-9/10959671_1127680923924042_6669950862596853499_n.jpg?oh=b324e75029778211c7147d9e32d8478e&amp;oe=56DFC463"/>
+		</div>
+		<div class="col-2">
+			<h2>ERFEI</h2><h3>ZHAO</h3>
+			<div class = row>
+				 <div class="col-md-12">
+			<p class = "oddtitle"> POSITION:</p><p class ="subheader"> Barfquake </p>
+			<p class = "oddtitle"> VOICE PART:</p><p class ="subheader"> Bass </p>
+				 </div>
+			</div>
+			<p class = "oddtitle"> HOMETOWN: </p><p class ="subheader"> Shanghai, China </p>
+		</div> 
+	</div>
+</div>
+
+<div class="evenPage">
+    <a id="ian" class="smooth"></a>
+	<div class="grid-container">
+		<div class="col-2">
+			<h4>IAN</h4><h5>GECKELER</h5>
+			<div class = row>
+				 <div class="col-md-12">
+			<p class = "eventitle"> POSITION:</p><p class ="subheader2"> Bassbrato </p>
+			<p class = "eventitle"> VOICE PART:</p><p class ="subheader2"> Bass </p>
+				 </div>
+			</div>
+			<p class = "eventitle"> HOMETOWN: </p><p class ="subheader2"> San Diego, CA </p>
+		</div>
+		<div class="col-1">
+			<img class = "grid-img"  alt="Image not found" src="https://scontent.ford1-1.fna.fbcdn.net/hphotos-xlf1/v/t1.0-9/10984287_1127680927257375_4922887796482309341_n.jpg?oh=7d0a21adfbcbec20fcd9b3c072bce21f&amp;oe=56AE46C6"/>
+		</div> 
+	</div>
+</div>
+
+<div class="oddPage">
+    <a id="jenny" class="smooth"></a>
+	<div class="grid-container">
+		<div class="col-1">
+			<img class = "grid-img" alt="Image not found" src="https://scontent.ford1-1.fna.fbcdn.net/hphotos-xaf1/v/t1.0-9/10959590_1127680930590708_3478599524315379344_n.jpg?oh=bedd311992854d610ef6c8e296471b85&amp;oe=56B2A47F"/>
+		</div>
+		<div class="col-2">
+			<h2>JENNY</h2><h3>WANG</h3>
+			<div class = row>
+				 <div class="col-md-12">
+			<p class = "oddtitle"> POSITION:</p><p class ="subheader"> Group Coordinator </p>
+			<p class = "oddtitle"> VOICE PART:</p><p class ="subheader"> Alto </p>
+				 </div>
+			</div>
+			<p class = "oddtitle"> HOMETOWN: </p><p class ="subheader"> Livingston, NJ </p>
+		</div> 
+	</div>
+</div>
+
+<div class="evenPage">
+    <a id="alex" class="smooth"></a>
+	<div class="grid-container">
+		<div class="col-2">
+			<h4>ALEX</h4><h5>JIA</h5>
+			<div class = row>
+				 <div class="col-md-12">
+			<p class = "eventitle"> POSITION:</p><p class ="subheader2"> Webmaster 2015 </p>
+			<p class = "eventitle"> VOICE PART:</p><p class ="subheader2"> Alto </p>
+				 </div>
+			</div>
+			<p class = "eventitle"> HOMETOWN: </p><p class ="subheader2"> Naperville, IL </p>
+		</div>
+		<div class="col-1">
+			<img class = "grid-img" alt="Image not found" src="https://scontent.ford1-1.fna.fbcdn.net/hphotos-xpt1/v/t1.0-9/10994157_1127680933924041_2646020179407543781_n.jpg?oh=3f1dd4beb5da0f2ade4b2b38f1f7328d&amp;oe=56EA5175"/>
+		</div> 
+	</div>
+</div>
+
+<div class="oddPage">
+    <a id="kenny" class="smooth"></a>
+	<div class="grid-container">
+		<div class="col-1">
+			<img class = "grid-img" alt="Image not found" src="https://scontent.ford1-1.fna.fbcdn.net/hphotos-xfa1/v/t1.0-9/10983394_1127680990590702_8313583208120565338_n.jpg?oh=7dd54c76ef85a51102558e9121d6a9b2&amp;oe=56AD6D4E"/>
+		</div>
+		<div class="col-2">
+			<h2>KENNY</h2><h3>HONG</h3>
+			<div class = row>
+				 <div class="col-md-12">
+			<p class = "oddtitle"> POSITION:</p><p class ="subheader"> Army Support </p>
+			<p class = "oddtitle"> VOICE PART:</p><p class ="subheader"> Vocal Percussion </p>
+				 </div>
+			</div>
+			<p class = "oddtitle"> HOMETOWN: </p><p class ="subheader"> Seoul, Korea </p>
+		</div> 
+	</div>
+</div>
+
+<div class="evenPage">
+    <a id="lily" class="smooth"></a>
+	<div class="grid-container">
+		<div class="col-2">
+			<h4>LILY</h4><h5>CAO</h5>
+			<div class = row>
+				 <div class="col-md-12">
+			<p class = "eventitle"> POSITION:</p><p class ="subheader2"> Concert Coordinator </p>
+			<p class = "eventitle"> VOICE PART:</p><p class ="subheader2"> Soprano </p>
+				 </div>
+			</div>
+			<p class = "eventitle"> HOMETOWN: </p><p class ="subheader2"> Yorktown, NY </p>
+		</div>
+		<div class="col-1">
+			<img class = "grid-img" alt="Image not found" src="https://scontent.ford1-1.fna.fbcdn.net/hphotos-prn2/v/t1.0-9/10455758_1127681047257363_7130292688012229911_n.jpg?oh=a83b9cea850305102eab369830c95afa&amp;oe=56EF85D3"/>
+		</div> 
+	</div>
+</div>
+
+<div class="oddPage">
+    <a id="miles" class="smooth"></a>
+	<div class="grid-container">
+		<div class="col-1">
+			<img class = "grid-img" alt="Image not found" src="https://scontent.ford1-1.fna.fbcdn.net/hphotos-xpa1/v/t1.0-9/10985566_1127681050590696_177815994006325282_n.jpg?oh=3f6fa8d8aed9b0b0bc85b08f26d1f17f&amp;oe=56EA7106"/>
+		</div>
+		<div class="col-2">
+			<h2>MILES</h2><h3>WOODHULL</h3>
+			<div class = row>
+				 <div class="col-md-12">
+			<p class = "oddtitle"> POSITION:</p><p class ="subheader"> Co-Music Director </p>
+			<p class = "oddtitle"> VOICE PART:</p><p class ="subheader"> Tenor </p>
+				 </div>
+			</div>
+			<p class = "oddtitle"> HOMETOWN: </p><p class ="subheader"> Nashville, TN </p>
+		</div> 
+	</div>
+</div>
+
+<div class="evenPage">
+    <a id="yash" class="smooth"></a>
+	<div class="grid-container">
+		<div class="col-2">
+			<h4>YASH</h4><h5>BHATIA</h5>
+			<div class = row>
+				 <div class="col-md-12">
+			<p class = "eventitle"> POSITION:</p><p class ="subheader2"> RA </p>
+			<p class = "eventitle"> VOICE PART:</p><p class ="subheader2"> Baritone </p>
+				 </div>
+			</div>
+			<p class = "eventitle"> HOMETOWN: </p><p class ="subheader2"> Elk Grove Village, IL</p>
+		</div>
+		<div class="col-1">
+			<img class = "grid-img"  alt="Image not found" src="https://scontent.ford1-1.fna.fbcdn.net/hphotos-xfa1/v/t1.0-9/10959816_1127681060590695_742400793220952637_n.jpg?oh=9a522241652d7839ea05202ab70d010f&amp;oe=56F78E37"/>
+		</div> 
+	</div>
+</div>
+
+<div class="oddPage">
+    <a id="zhi" class="smooth"></a>
+	<div class="grid-container">
+		<div class="col-1">
+			<img class = "grid-img" alt="Image not found" src="https://scontent.ford1-1.fna.fbcdn.net/hphotos-xap1/v/t1.0-9/10445520_1127681117257356_5281808226274901557_n.jpg?oh=a1f9668c985fecf9ac11c6c1f6f9fce3&amp;oe=56F8C0DF"/>
+		</div>
+		<div class="col-2">
+			<h2>ZHIHONG</h2><h3>GUO</h3>
+			<div class = row>
+				 <div class="col-md-12">
+			<p class = "oddtitle"> POSITION:</p><p class ="subheader"> Bass </p>
+			<p class = "oddtitle"> VOICE PART:</p><p class ="subheader"> Bass </p>
+				 </div>
+			</div>
+			<p class = "oddtitle"> HOMETOWN: </p><p class ="subheader"> Shanghai, China</p>
+		</div> 
+	</div>
+</div>
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+<script src="https://github.com/kswedberg/jquery-smooth-scroll/blob/master/jquery.smooth-scroll.min.js"></script>
+<script>
+$('.smooth').on('click', function() {
+    $.smoothScroll({
+        scrollElement: $('body'),
+        scrollTarget: '#' + this.id
+    });
+    
+    return false;
+});
+</script>
+</body>
+</html>
